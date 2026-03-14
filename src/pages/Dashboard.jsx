@@ -1,9 +1,30 @@
 import React from 'react';
-import { Droplets, Cpu, Network, Database, Activity, ShieldCheck, Server } from 'lucide-react';
+import { Droplets, Cpu, Network, Database, Activity, ShieldCheck, Server, Info } from 'lucide-react';
 
 export default function Dashboard() {
   return (
     <div className="space-y-10 pb-20">
+      {/* INTRO SECTION - Sammanfattning av projektets mål */}
+      <section className="bg-slate-900/20 border border-slate-800/60 p-6 rounded-3xl">
+        <div className="flex items-start gap-4">
+          <div className="mt-1 p-2 bg-blue-500/10 rounded-lg">
+            <Info size={18} className="text-blue-400" />
+          </div>
+          <div>
+            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-2 text-blue-400">Inledning & Projektmål</h3>
+            <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
+              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot den kritiska infrastrukturen i vattenreningsverket 
+              <strong> Vattenkraft 2.0</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
+              för att föreslå robusta säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
+            </p>
+            <div className="mt-4 flex gap-6 text-[10px] font-mono text-slate-500 uppercase">
+              <span className="flex items-center gap-1.5"><ShieldCheck size={12} /> Metod: Purdue Model</span>
+              <span className="flex items-center gap-1.5"><Activity size={12} /> Fokus: Driftkontinuitet & Säkerhet</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* HEADER SECTION */}
       <header>
         <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Step 01: System Architecture</h2>
@@ -71,7 +92,6 @@ export default function Dashboard() {
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Primary Assets Table */}
           <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl">
             <h3 className="text-white font-bold mb-6 flex items-center gap-2 text-sm uppercase tracking-widest">
               <Server size={18} className="text-blue-400" /> System Criticality
@@ -98,7 +118,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Impact Analysis Card */}
           <div className="bg-blue-600/5 border border-blue-500/20 p-8 rounded-3xl flex flex-col justify-center">
             <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mb-6">
               <Activity className="text-blue-400" size={24} />
@@ -113,7 +132,6 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* FOOTER NOTE */}
       <footer className="pt-10 border-t border-slate-800 text-center">
         <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">
           Vattenkraft 2.0 // OT Cybersecurity Framework // 2026
