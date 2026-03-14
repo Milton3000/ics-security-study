@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboard, ShieldAlert, Zap, Activity, Lock, Share2, FileText, Settings } from 'lucide-react';
+import { LayoutDashboard, ShieldAlert, Zap, Activity, Lock } from 'lucide-react';
 
-// Importera dina nya sidor (vi skapar dem nedan)
 import Dashboard from './pages/Dashboard';
 import AttackAnalysis from './pages/AttackAnalysis';
 import RiskMatrix from './pages/RiskMatrix';
+import Defense from './pages/Defense';
 
 export default function App() {
   const [activePage, setActivePage] = useState('dashboard');
@@ -65,7 +65,7 @@ export default function App() {
             {activePage === 'dashboard' && <Dashboard />}
             {activePage === 'attack' && <AttackAnalysis />}
             {activePage === 'risk' && <RiskMatrix />}
-            {/* Fyll på med fler sidor här */}
+            {activePage === 'defense' && <Defense />}
           </motion.div>
         </AnimatePresence>
       </main>
