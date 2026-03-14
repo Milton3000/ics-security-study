@@ -90,7 +90,7 @@ export default function RiskMatrix() {
           <AlertTriangle size={18} /> Critical Findings
         </h4>
         <p className="text-slate-400 text-sm leading-relaxed">
-          Analysen visar att <strong>R01 (PLC Logic Injection)</strong> utgör det mest kritiska hotet mot LundaVatten 2.0. Till skillnad från traditionell IT-säkerhet, där datakonfidentialitet prioriteras, fokuserar vi här på <strong>Safety</strong> och <strong>Integrity</strong>. En lyckad injektion av skadlig kod i kemikaliedoserings-processen har en direkt kinetisk inverkan som kan leda till förgiftning av dricksvattnet innan monitorerings-system (SCADA) hinner reagera.
+          Analysen visar att <strong>R01 (PLC Logic Injection)</strong> utgör det mest kritiska hotet mot Vattenkraft 2.0. Till skillnad från traditionell IT-säkerhet, där datakonfidentialitet prioriteras, fokuserar vi här på <strong>Safety</strong> och <strong>Integrity</strong>. En lyckad injektion av skadlig kod i kemikaliedoserings-processen har en direkt kinetisk inverkan som kan leda till förgiftning av dricksvattnet innan monitorerings-system (SCADA) hinner reagera.
         </p>
       </div>
     </div>
