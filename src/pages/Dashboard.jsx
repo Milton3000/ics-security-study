@@ -14,7 +14,7 @@ export default function Dashboard() {
             <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-2 text-blue-400">Inledning & Projektmål</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
               Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot den kritiska infrastrukturen i vattenreningsverket 
-              <strong> Vattenkraft 2.0</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
+              <strong> WaterBoy</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
               för att föreslå robusta säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
             </p>
             <div className="mt-4 flex gap-6 text-[10px] font-mono text-slate-500 uppercase">
@@ -27,15 +27,15 @@ export default function Dashboard() {
 
       {/* HEADER SECTION */}
       <header>
-        <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Step 01: System Architecture</h2>
-        <h1 className="text-4xl font-bold text-white tracking-tight italic">Vattenkraft 2.0 Asset Map</h1>
+        <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Steg 01: Systemarkitektur</h2>
+        <h1 className="text-4xl font-bold text-white tracking-tight italic">WaterBoy Resurskarta</h1>
         <p className="text-slate-500 mt-4 max-w-2xl leading-relaxed text-sm">
           En säkerhetsanalys av en modern dricksvattenanläggning (2026). Systemet kombinerar traditionell driftteknik (OT) 
           med moderna IIoT-lösningar för att säkerställa vattenkvalitet och drifttillgänglighet för 150 000 invånare.
         </p>
       </header>
 
-      {/* STATS GRID - QUICK OVERVIEW */}
+      {/* STATS GRID - SNABB ÖVERBLICK */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {[
           { label: 'Critical Assets', val: '12', icon: Database, color: 'text-blue-400' },
@@ -65,11 +65,11 @@ export default function Dashboard() {
         <div className="flex flex-col gap-6 relative">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {[
-              { level: 'Level 4', name: 'Enterprise IT', desc: 'Business Networks' },
-              { level: 'Level 3', name: 'DMZ', desc: 'Secure Integration' },
-              { level: 'Level 2', name: 'SCADA', desc: 'Supervisory Control' },
+              { level: 'Level 0', name: 'Field Devices', desc: 'Sensors & Pumps' },
               { level: 'Level 1', name: 'PLC Control', desc: 'Process Logic' },
-              { level: 'Level 0', name: 'Field Devices', desc: 'Sensors & Pumps' }
+              { level: 'Level 2', name: 'SCADA', desc: 'Supervisory Control' },
+              { level: 'Level 3', name: 'DMZ', desc: 'Secure Integration' },
+              { level: 'Level 4', name: 'Enterprise IT', desc: 'Business Networks' },
             ].map((level, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="w-full h-24 bg-slate-800/50 border border-slate-700 rounded-2xl flex flex-col items-center justify-center hover:border-blue-500/50 transition-all cursor-default text-center p-4">
@@ -84,10 +84,10 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* STEP 02: CRITICAL ASSETS SECTION */}
+      {/* STEG 02: CRITICAL ASSETS SECTION */}
       <section className="mt-12">
         <header className="mb-6">
-          <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Step 02: Critical Assets</h2>
+          <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Steg 02: Kritiska Tillgångar</h2>
           <h3 className="text-2xl font-bold text-white tracking-tight font-serif italic">Core Components Identification</h3>
         </header>
 
@@ -124,9 +124,9 @@ export default function Dashboard() {
             </div>
             <h3 className="text-xl font-bold text-white mb-4 italic font-serif">Impact Analysis</h3>
             <p className="text-sm text-slate-400 leading-relaxed italic">
-              "Vid en kompromettering av **Level 1 (PLC Control)** förloras den fysiska integriteten i reningsprocessen. 
+              Vid en kompromettering av **Level 1 (PLC Control)** förloras den fysiska integriteten i reningsprocessen. 
               Den mest kritiska risken är obehörig manipulation av natriumhydroxid-nivåer, vilket kan leda till 
-              omedelbar hälsofara för konsumenter och permanenta skador på infrastrukturen."
+              omedelbar hälsofara för konsumenter och permanenta skador på infrastrukturen.
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Dashboard() {
 
       <footer className="pt-10 border-t border-slate-800 text-center">
         <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">
-          Vattenkraft 2.0 // OT Cybersecurity Framework // 2026
+          WaterBoy // OT Cybersecurity Framework // 2026
         </p>
       </footer>
     </div>

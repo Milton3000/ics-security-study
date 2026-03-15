@@ -13,7 +13,7 @@ export default function RiskMatrix() {
   return (
     <div className="space-y-10">
       <header>
-        <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Step 06: Quantitative Analysis</h2>
+        <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Steg 06: Riskanalys</h2>
         <h1 className="text-4xl font-bold text-white tracking-tight">Cyber Risk Heatmap</h1>
       </header>
 
@@ -87,10 +87,10 @@ export default function RiskMatrix() {
       {/* KRITISK ANALYS - TEXTDEL FÖR VG */}
       <div className="bg-red-500/5 border border-red-500/20 p-8 rounded-3xl">
         <h4 className="text-red-400 font-bold flex items-center gap-2 mb-4 uppercase text-sm">
-          <AlertTriangle size={18} /> Critical Findings
+          <AlertTriangle size={18} /> Kritiska Fynd
         </h4>
         <p className="text-slate-400 text-sm leading-relaxed">
-          Analysen visar att <strong>R01 (PLC Logic Injection)</strong> utgör det mest kritiska hotet mot Vattenkraft 2.0. Till skillnad från traditionell IT-säkerhet, där datakonfidentialitet prioriteras, fokuserar vi här på <strong>Safety</strong> och <strong>Integrity</strong>. En lyckad injektion av skadlig kod i kemikaliedoserings-processen har en direkt kinetisk inverkan som kan leda till förgiftning av dricksvattnet innan monitorerings-system (SCADA) hinner reagera.
+          Analysen visar att <strong>R01 (PLC Logic Injection)</strong> utgör det mest kritiska hotet mot WaterBoy. Till skillnad från traditionell IT-säkerhet, där datakonfidentialitet prioriteras, fokuserar vi här på <strong>Safety</strong> och <strong>Integrity</strong>. En lyckad injektion av skadlig kod i kemikaliedoserings-processen har en direkt kinetisk inverkan som kan leda till förgiftning av dricksvattnet innan monitorerings-system (SCADA) hinner reagera.
         </p>
       </div>
     </div>

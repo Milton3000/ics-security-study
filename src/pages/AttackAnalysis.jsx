@@ -5,19 +5,19 @@ export default function AttackAnalysis() {
   return (
     <div className="space-y-12 pb-20">
       <header>
-        <h2 className="text-sm font-semibold text-red-500 uppercase tracking-[0.2em] mb-1">Step 03-05: Threat Landscape</h2>
-        <h1 className="text-4xl font-bold text-white tracking-tight italic text-shadow-glow">Vulnerability & Adversary Analysis</h1>
+        <h2 className="text-sm font-semibold text-red-500 uppercase tracking-[0.2em] mb-1">Steg 03-05: Attackytor</h2>
+        <h1 className="text-4xl font-bold text-white tracking-tight italic text-shadow-glow">Sårbarhet & Riskanalys</h1>
       </header>
 
       {/* STEP 03: ATTACK SURFACES */}
       <section className="bg-slate-900/40 border border-slate-800 rounded-3xl p-8">
         <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2 italic">
-          <Search className="text-red-500" size={20} /> Step 03: Attack Surfaces (Exponering)
+          <Search className="text-red-500" size={20} /> Steg 03: Attackytor
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <p className="text-sm text-slate-400 leading-relaxed">
-              För Vattenkraft 2.0 identifieras tre primära attackytor. Den mest kritiska är <strong>Remote Maintenance Access</strong>. 
+              För WaterBoy identifieras tre primära attackytor. Den mest kritiska är <strong>Remote Maintenance Access</strong>. 
               Många ICS-system kräver fjärråtkomst för externa tekniker, vilket ofta sker via VPN. Om denna inte är strikt 
               segmenterad eller saknar MFA, blir den en direkt bro in i Level 2 (SCADA).
             </p>
@@ -43,7 +43,7 @@ export default function AttackAnalysis() {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl">
           <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2 italic">
-            <Skull className="text-red-500" size={20} /> Step 04: Threat Actors
+            <Skull className="text-red-500" size={20} /> Steg 04: Hotaktörer
           </h3>
           <div className="space-y-4 text-sm text-slate-400">
             <p><strong>Nation-States:</strong> Strategiskt sabotage mot kritisk infrastruktur för geopolitiska mål.</p>
@@ -56,10 +56,10 @@ export default function AttackAnalysis() {
 
         {/* STEP 05: ATTACK VECTOR & CASE STUDY */}
         <div className="bg-red-900/10 border border-red-500/20 p-8 rounded-3xl relative overflow-hidden">
-          <h3 className="text-xl font-bold text-white mb-4 italic">Step 05: Case Study - Oldsmar Comparison</h3>
+          <h3 className="text-xl font-bold text-white mb-4 italic">Steg 05: Case Study - Oldsmar Jämförelse</h3>
           <p className="text-sm text-slate-400 leading-relaxed mb-6">
-            Vattenkraft 2.0 skyddar sig mot "Oldsmar-scenariot" genom att ha eliminerat TeamViewer till förmån för en 
-            Zero Trust Network Access (ZTNA)-lösning. Dock kvarstår risken för en <strong>Chain Reaction</strong>:
+            WaterBoy skyddar sig mot "Oldsmar-scenariot" genom att ha eliminerat TeamViewer till förmån för en 
+            Zero Trust Network Access (ZTNA)-lösning. <br/> Dock kvarstår risken för en <strong>Chain Reaction</strong>:
           </p>
           <div className="space-y-2 font-mono text-[11px]">
             <div className="text-blue-400">1. Initial Access: Phishing (IT-Network)</div>
