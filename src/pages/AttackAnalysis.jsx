@@ -1,5 +1,4 @@
-import React from 'react';
-import { Search, Skull, Share2, Zap, AlertCircle, Terminal } from 'lucide-react';
+import { Search, Skull, AlertCircle } from 'lucide-react';
 
 export default function AttackAnalysis() {
   return (

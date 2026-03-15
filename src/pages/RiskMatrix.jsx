@@ -26,7 +26,7 @@ export default function RiskMatrix() {
               Consequence (1-5)
             </div>
             
-            {/* THE GRID */}
+            {/* GRID */}
             <div className="grid grid-cols-5 grid-rows-5 gap-2 h-[400px] w-full border-l border-b border-slate-700 pb-2 pl-2">
               {[5, 4, 3, 2, 1].map((row) => (
                 [1, 2, 3, 4, 5].map((col) => {
@@ -84,7 +84,7 @@ export default function RiskMatrix() {
         </div>
       </div>
 
-      {/* KRITISK ANALYS - TEXTDEL FÖR VG */}
+      {/* KRITISK ANALYS */}
       <div className="bg-red-500/5 border border-red-500/20 p-8 rounded-3xl">
         <h4 className="text-red-400 font-bold flex items-center gap-2 mb-4 uppercase text-sm">
           <AlertTriangle size={18} /> Kritiska Fynd

@@ -7,14 +7,14 @@ export default function Defense() {
       category: 'Network Security', 
       measure: 'Micro-segmentation (ISA/IEC 62443)', 
       impact: 'High',
-      // Kopplar åtgärden till specifika hot för att möta kriterierna
+      // Kopplar åtgärden till specifika hot
       desc: 'Isolering av PLC-nätverk i zoner. Detta förhindrar Lateral Movement och skyddar Level 1-enheter om IT-nätverket (Level 4) drabbas av Ransomware.'
     },
     { 
       category: 'Access Control', 
       measure: 'MFA & PAM Integration', 
       impact: 'Medium',
-      // Kopplar till stulna inloggningsuppgifter (Oldsmar-scenariot)
+      // Kopplar till stulna inloggningsuppgifter (Oldsmar)
       desc: 'Hårdvarubaserad MFA för fjärrunderhåll. Eliminerar risken med stulna inloggningsuppgifter som var den primära vektorn i Oldsmar-attacken 2021.'
     },
     { 
@@ -33,7 +33,7 @@ export default function Defense() {
         <h1 className="text-4xl font-bold text-white tracking-tight italic">Säkerhetskontroller</h1>
       </header>
 
-      {/* --- DEFENSE IN DEPTH VISUAL --- */}
+      {/* --- DEFENSE MED IN DEPTH VISUAL --- */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {controls.map((item, i) => (
           <div key={i} className="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl relative overflow-hidden group hover:border-emerald-500/30 transition-all">
