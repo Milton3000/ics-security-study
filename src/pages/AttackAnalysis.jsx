@@ -8,7 +8,7 @@ export default function AttackAnalysis() {
         <h1 className="text-4xl font-bold text-white tracking-tight italic text-shadow-glow">Sårbarhet & Riskanalys</h1>
       </header>
 
-      {/* STEP 03: ATTACK SURFACES */}
+      {/* STEG 03: ATTACKYTOR */}
       <section className="bg-slate-900/40 border border-slate-800 rounded-3xl p-8">
         <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2 italic">
           <Search className="text-red-500" size={20} /> Steg 03: Attackytor
@@ -38,7 +38,7 @@ export default function AttackAnalysis() {
         </div>
       </section>
 
-      {/* STEP 04: THREAT ACTORS */}
+      {/* STEG 04: HOTAKTÖRER */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl">
           <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2 italic">
@@ -53,7 +53,7 @@ export default function AttackAnalysis() {
           </div>
         </div>
 
-        {/* STEP 05: ATTACK VECTOR & CASE STUDY */}
+        {/* STEG 05: ATTACK VECTOR & OLDSMAR */}
         <div className="bg-red-900/10 border border-red-500/20 p-8 rounded-3xl relative overflow-hidden">
           <h3 className="text-xl font-bold text-white mb-4 italic">Steg 05: Case Study - Oldsmar Jämförelse</h3>
           <p className="text-sm text-slate-400 leading-relaxed mb-6">
