@@ -21,7 +21,7 @@ export default function RiskMatrix() {
         {/* --- HEATMAP VISUAL --- */}
         <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl shadow-2xl">
           <div className="relative">
-            {/* Y-AXIS LABEL */}
+            {/* Y-AXIS */}
             <div className="absolute -left-12 top-1/2 -rotate-90 text-[10px] uppercase tracking-widest text-slate-500 font-bold">
               Consequence (1-5)
             </div>
@@ -52,7 +52,7 @@ export default function RiskMatrix() {
               ))}
             </div>
             
-            {/* X-AXIS LABEL */}
+            {/* X-AXIS */}
             <div className="text-center mt-6 text-[10px] uppercase tracking-widest text-slate-500 font-bold">
               Probability (1-5)
             </div>

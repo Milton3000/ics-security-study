@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShieldCheck, Target, ZapOff, ClipboardCheck } from 'lucide-react';
 
 export default function Defense() {
