@@ -29,8 +29,8 @@ export default function Defense() {
   return (
     <div className="space-y-12 pb-20">
       <header>
-        <h2 className="text-sm font-semibold text-emerald-500 uppercase tracking-[0.2em] mb-1">Step 07 & 08: Defense & Evaluation</h2>
-        <h1 className="text-4xl font-bold text-white tracking-tight italic">Security Posture & Resilience</h1>
+        <h2 className="text-sm font-semibold text-emerald-500 uppercase tracking-[0.2em] mb-1">Steg 07 & 08: Försvar & Utvärdering</h2>
+        <h1 className="text-4xl font-bold text-white tracking-tight italic">Säkerhetskontroller</h1>
       </header>
 
       {/* --- DEFENSE IN DEPTH VISUAL --- */}
@@ -58,7 +58,7 @@ export default function Defense() {
         {/* Residual Risk */}
         <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 border-t-4 border-t-amber-500 shadow-xl">
           <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-white italic">
-            <ZapOff className="text-amber-500" size={20} /> Residual Risk Assessment
+            <ZapOff className="text-amber-500" size={20} /> Resterande Riskbedömning
           </h3>
           <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
             <p>
