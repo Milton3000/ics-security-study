@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lägg till detta för att säkerställa att bakgrunden blir mörk direkt */
 body {
   margin: 0;
   background-color: #020617;

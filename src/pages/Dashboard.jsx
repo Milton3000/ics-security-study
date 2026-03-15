@@ -1,10 +1,9 @@
-import React from 'react';
 import { Droplets, Cpu, Network, Database, Activity, ShieldCheck, Server, Info } from 'lucide-react';
 
 export default function Dashboard() {
   return (
     <div className="space-y-10 pb-20">
-      {/* INTRO SECTION - Sammanfattning av projektets mål */}
+      {/* INTRO */}
       <section className="bg-slate-900/20 border border-slate-800/60 p-6 rounded-3xl">
         <div className="flex items-start gap-4">
           <div className="mt-1 p-2 bg-blue-500/10 rounded-lg">
@@ -51,7 +50,7 @@ export default function Dashboard() {
         ))}
       </div>
 
-      {/* STEP 01: PURDUE MODEL VISUALIZATION */}
+      {/* STEG 01: PURDUE MODEL VISUALIZATION */}
       <div className="bg-gradient-to-br from-slate-900 to-[#020617] border border-slate-800 rounded-3xl p-8 relative overflow-hidden group">
         <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
             <Network size={200} />
@@ -84,7 +83,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* STEG 02: CRITICAL ASSETS SECTION */}
+      {/* STEG 02: KRITISKA TILLGÅNGAR */}
       <section className="mt-12">
         <header className="mb-6">
           <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Steg 02: Kritiska Tillgångar</h2>
