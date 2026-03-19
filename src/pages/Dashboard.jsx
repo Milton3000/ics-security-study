@@ -12,7 +12,7 @@ export default function Dashboard() {
           <div>
             <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-2 text-blue-400">Inledning & Projektmål</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
-              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot den kritiska infrastrukturen i vattenreningsverket 
+              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket 
               <strong> WaterBoy</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
               för att föreslå robusta säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
             </p>

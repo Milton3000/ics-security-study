@@ -18,7 +18,7 @@ export default function RiskMatrix() {
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* --- HEATMAP VISUAL --- */}
+        {/*  HEATMAP VISUAL (KANSKE GÖRA MER INTERAKTIV? FÅR SE) */}
         <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl shadow-2xl">
           <div className="relative">
             {/* Y-AXIS */}
@@ -59,7 +59,7 @@ export default function RiskMatrix() {
           </div>
         </div>
 
-        {/* --- RISK LEGEND / DETAILS --- */}
+        {/*  RISK LEGEND / DETAILS  */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold flex items-center gap-2 mb-6">
             <Info size={20} className="text-blue-400" /> Identified Risk Vectors
