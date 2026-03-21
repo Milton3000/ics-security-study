@@ -12,9 +12,9 @@ export default function Dashboard() {
           <div>
             <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-2 text-blue-400">Inledning & Projektmål</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
-              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket 
-              <strong> WaterBoy</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
-              för att föreslå säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
+              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket
+              <strong> WaterBoy</strong>. <br /> Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor
+              för att föreslå säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443.
             </p>
             <div className="mt-4 flex gap-6 text-[10px] font-mono text-slate-500 uppercase">
               <span className="flex items-center gap-1.5"><ShieldCheck size={12} /> Metod: Purdue Model</span>
@@ -29,7 +29,7 @@ export default function Dashboard() {
         <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-[0.2em] mb-1">Steg 01: Systemarkitektur</h2>
         <h1 className="text-4xl font-bold text-white tracking-tight italic">WaterBoy Resurskarta</h1>
         <p className="text-slate-500 mt-4 max-w-2xl leading-relaxed text-sm">
-          En säkerhetsanalys av en modern dricksvattenanläggning (2026). Systemet kombinerar traditionell driftteknik (OT) 
+          En säkerhetsanalys av en modern dricksvattenanläggning (2026). Systemet kombinerar traditionell driftteknik (OT)
           med moderna IIoT-lösningar för att säkerställa vattenkvalitet och drifttillgänglighet för 150 000 invånare.
         </p>
       </header>
@@ -53,22 +53,22 @@ export default function Dashboard() {
       {/* STEG 01: PURDUE MODEL VISUALIZATION */}
       <div className="bg-gradient-to-br from-slate-900 to-[#020617] border border-slate-800 rounded-3xl p-8 relative overflow-hidden group">
         <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Network size={200} />
+          <Network size={200} />
         </div>
-        
+
         <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
           <ShieldCheck className="text-blue-500" size={20} />
           Process Control Flow (Purdue Model)
         </h3>
-        
+
         <div className="flex flex-col gap-6 relative">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {[
-              { level: 'Level 0', name: 'Field Devices', desc: 'Sensors & Pumps' },
-              { level: 'Level 1', name: 'PLC Control', desc: 'Process Logic' },
-              { level: 'Level 2', name: 'SCADA', desc: 'Supervisory Control' },
-              { level: 'Level 3', name: 'DMZ', desc: 'Secure Integration' },
               { level: 'Level 4', name: 'Enterprise IT', desc: 'Business Networks' },
+              { level: 'Level 3', name: 'DMZ', desc: 'Secure Integration' },
+              { level: 'Level 2', name: 'SCADA', desc: 'Supervisory Control' },
+              { level: 'Level 1', name: 'PLC Control', desc: 'Process Logic' },
+              { level: 'Level 0', name: 'Field Devices', desc: 'Sensors & Pumps' }
             ].map((level, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="w-full h-24 bg-slate-800/50 border border-slate-700 rounded-2xl flex flex-col items-center justify-center hover:border-blue-500/50 transition-all cursor-default text-center p-4">
@@ -107,9 +107,8 @@ export default function Dashboard() {
                     <div className="text-sm font-bold text-slate-200">{item.asset}</div>
                     <div className="text-[10px] text-slate-500 uppercase">{item.function}</div>
                   </div>
-                  <span className={`text-[10px] font-bold px-2 py-1 rounded-md ${
-                    item.status === 'Critical' ? 'bg-red-500/10 text-red-400' : 'bg-blue-500/10 text-blue-400'
-                  }`}>
+                  <span className={`text-[10px] font-bold px-2 py-1 rounded-md ${item.status === 'Critical' ? 'bg-red-500/10 text-red-400' : 'bg-blue-500/10 text-blue-400'
+                    }`}>
                     {item.status}
                   </span>
                 </div>
@@ -123,8 +122,8 @@ export default function Dashboard() {
             </div>
             <h3 className="text-xl font-bold text-white mb-4 italic font-serif">Impact Analysis</h3>
             <p className="text-sm text-slate-400 leading-relaxed italic">
-              Vid en kompromettering av **Level 1 (PLC Control)** förloras den fysiska integriteten i reningsprocessen. 
-              Den mest kritiska risken är obehörig manipulation av natriumhydroxid-nivåer, vilket kan leda till 
+              Vid en kompromettering av Level 1 (PLC Control) förloras den fysiska integriteten i reningsprocessen.
+              Den mest kritiska risken är obehörig manipulation av natriumhydroxid-nivåer, vilket kan leda till
               omedelbar hälsofara för konsumenter och permanenta skador på infrastrukturen.
             </p>
           </div>
