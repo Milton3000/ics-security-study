@@ -14,7 +14,7 @@ export default function Dashboard() {
             <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
               Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket 
               <strong> WaterBoy</strong>. Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor 
-              för att föreslå robusta säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
+              för att föreslå säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443. 
             </p>
             <div className="mt-4 flex gap-6 text-[10px] font-mono text-slate-500 uppercase">
               <span className="flex items-center gap-1.5"><ShieldCheck size={12} /> Metod: Purdue Model</span>
