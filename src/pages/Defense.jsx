@@ -161,7 +161,7 @@ export default function Defense() {
         <div className="mt-16 p-8 bg-gradient-to-br from-slate-900 to-emerald-950/20 border border-slate-800 rounded-3xl text-shadow-glow">
           <h3 className="text-xl font-bold text-white mb-4 italic">Strategisk Utvärdering & Slutsats</h3>
           <p className="text-sm text-slate-400 leading-relaxed">
-            Denna säkerhetsarkitektur adresserar de mest kritiska hoten mot vattenförsörjningen genom att bygga barriärer både tekniskt och administrativt. Den största återstående risken är <strong>Configuration Drift</strong> – att säkerhetsinställningar luckras upp över tid. Det krävs kontinuerlig monitorering och regelbundna revisioner av brandväggsregler och åtkomsträttigheter för att bibehålla försvaret.
+            Denna säkerhetsarkitektur adresserar de mest kritiska hoten mot vattenförsörjningen genom att bygga barriärer både tekniskt och administrativt. Den största återstående risken är <strong>Configuration Drift</strong>, att säkerhetsinställningar luckras upp över tid. Det krävs kontinuerlig monitorering och regelbundna revisioner av brandväggsregler och åtkomsträttigheter för att bibehålla försvaret.
           </p>
           
           {/* --- REFERENSLISTA --- */}
