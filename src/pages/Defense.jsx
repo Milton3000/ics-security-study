@@ -29,7 +29,7 @@ export default function Defense() {
         <h1 className="text-4xl font-bold text-white tracking-tight italic">Säkerhetskontroller</h1>
       </header>
 
-      {/* --- DEFENSE MED IN DEPTH VISUAL --- */}
+      {/* DEFENSE MED IN DEPTH VISUAL */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {controls.map((item, i) => (
           <div key={i} className="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl relative overflow-hidden group hover:border-emerald-500/30 transition-all text-shadow-glow">
@@ -99,7 +99,7 @@ export default function Defense() {
         </div>
       </div>
 
-      {/* --- TECHNICAL DEEP DIVE --- */}
+      {/* TECH */}
       <section className="mt-20 border-t border-slate-800 pt-16 max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-slate-800"></div>
@@ -112,7 +112,7 @@ export default function Defense() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 text-slate-300 leading-relaxed text-shadow-glow">
           
-          {/* Vänster kolumn: Arkitektur & Standarder */}
+          {/* Vänster kolumn */}
           <div className="md:col-span-7 space-y-8">
             <div>
               <h3 className="text-emerald-400 font-bold uppercase text-xs tracking-[0.2em] mb-4">
@@ -132,7 +132,7 @@ export default function Defense() {
             </div>
           </div>
 
-          {/* Höger kolumn: Operativa strategier */}
+          {/* Höger kolumn */}
           <div className="md:col-span-5 space-y-8">
             <div className="bg-emerald-500/5 border border-emerald-500/10 p-6 rounded-3xl">
               <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-widest flex items-center gap-2">
@@ -157,21 +157,21 @@ export default function Defense() {
           </div>
         </div>
 
-        {/* Slutgiltig utvärdering (Step 08 fördjupning) */}
+        {/* Slutgiltig utvärdering */}
         <div className="mt-16 p-8 bg-gradient-to-br from-slate-900 to-emerald-950/20 border border-slate-800 rounded-3xl text-shadow-glow">
           <h3 className="text-xl font-bold text-white mb-4 italic">Strategisk Utvärdering & Slutsats</h3>
           <p className="text-sm text-slate-400 leading-relaxed">
             Denna säkerhetsarkitektur adresserar de mest kritiska hoten mot vattenförsörjningen genom att bygga barriärer både tekniskt och administrativt. Den största återstående risken är <strong>Configuration Drift</strong>, att säkerhetsinställningar luckras upp över tid. Det krävs kontinuerlig monitorering och regelbundna revisioner av brandväggsregler och åtkomsträttigheter för att bibehålla försvaret.
           </p>
           
-          {/* --- REFERENSLISTA --- */}
+          {/*  REFERENSLISTA  */}
       <section className="mt-20 border-t border-slate-800 pt-10 pb-10">
         <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6 flex items-center gap-2">
           <BookOpen size={16} /> Källor
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[11px] font-mono">
           
-{/* ISA/IEC 62443 - Ändrad till den officiella översiktssidan */}
+{/* ISA/IEC 62443 */}
 <a href="https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa99" 
    target="_blank" rel="noopener noreferrer"
    className="p-4 bg-slate-900/20 rounded-xl border border-slate-800/50 hover:border-emerald-500/50 transition-colors group">
@@ -183,7 +183,7 @@ export default function Defense() {
   <p className="text-slate-400 font-sans">Officiell kommittésida för ISA99/IEC 62443 som definierar Zones & Conduits.</p>
 </a>
 
-{/* CISA Oldsmar - Uppdaterad till den direkta rapportlänken */}
+{/* CISA Oldsmar */}
 <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-042a" 
    target="_blank" rel="noopener noreferrer"
    className="p-4 bg-slate-900/20 rounded-xl border border-slate-800/50 hover:border-emerald-500/50 transition-colors group">
@@ -195,7 +195,7 @@ export default function Defense() {
   <p className="text-slate-400 font-sans">Den officiella tekniska genomgången av attacken mot vattenverket i Florida.</p>
 </a>
 
-{/* NIST SP 800-82 - Den som fungerade (Behålls) */}
+{/* NIST SP 800-82 */}
 <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf" 
    target="_blank" rel="noopener noreferrer"
    className="p-4 bg-slate-900/20 rounded-xl border border-slate-800/50 hover:border-emerald-500/50 transition-colors group">
@@ -207,7 +207,7 @@ export default function Defense() {
   <p className="text-slate-400 font-sans">Vägledning kring Defense-in-Depth och segmentering av industriella kontrollsystem.</p>
 </a>
 
-{/* SANS ICS - Uppdaterad till deras ICS-portal */}
+{/* SANS ICS */}
 <a href="https://www.sans.org/industrial-control-systems-security/" 
    target="_blank" rel="noopener noreferrer"
    className="p-4 bg-slate-900/20 rounded-xl border border-slate-800/50 hover:border-emerald-500/50 transition-colors group">
