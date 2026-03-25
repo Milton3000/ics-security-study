@@ -126,7 +126,7 @@ export default function Defense() {
               </p>
             </div>
 
-            <div className="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 italic text-sm text-shadow-glow">
+            <div className="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 text-sm text-shadow-glow">
               <h4 className="text-white font-bold not-italic mb-2">Jämförande Analys: Oldsmar vs. WaterBoy</h4>
               I Oldsmar-incidenten (2021) utnyttjades en 'flat network'-arkitektur där en TeamViewer-access gav direkt tillgång till HMI:et. I vår arkitektur krävs ett intrång i tre separata lager: först IT-VPN med MFA, sedan DMZ-hoppet, och slutligen en autentiserad session mot SCADA-servern. Detta skapar en 'Defense-in-Depth' som gör att angreppstiden ökar exponentiellt.
             </div>

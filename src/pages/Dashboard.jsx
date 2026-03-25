@@ -12,7 +12,7 @@ export default function Dashboard() {
           <div>
             <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-2 text-blue-400">Inledning & Projektmål</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
-              Denna säkerhetsstudie syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket
+              Den här säkerhetsstudien syftar till att identifiera och analysera cyberhot mot infrastrukturen i vattenreningsverket
               <strong> WaterBoy</strong>. <br /> Genom en strukturerad hotmodellering undersöks systemets arkitektur, kritiska tillgångar och attackytor
               för att föreslå säkerhetsåtgärder baserade på industristandarden ISA/IEC 62443.
             </p>
@@ -132,7 +132,7 @@ export default function Dashboard() {
 
       <footer className="pt-10 border-t border-slate-800 text-center">
         <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">
-          WaterBoy // OT Cybersecurity Framework // 2026
+          WaterBoy 2026
         </p>
       </footer>
     </div>
