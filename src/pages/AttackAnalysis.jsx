@@ -22,7 +22,7 @@ export default function AttackAnalysis() {
             </p>
             <div className="bg-slate-800/50 p-4 rounded-xl border-l-4 border-red-500 text-xs text-slate-300">
               <strong>Analys:</strong> Legacy-protokoll som Modbus TCP saknar inbyggd autentisering, vilket gör att en angripare 
-              som väl nått nätverket kan skicka "Write Single Coil"-kommandon utan hinder.
+              som väl nått nätverket kan skicka "Write Single Coil"-kommandon utan hinder. <br/> Med andra ord att man kan styra "ON" eller "OFF" med ett binary output.
             </div>
           </div>
           <div className="bg-slate-950 rounded-2xl p-6 border border-slate-800">
