@@ -181,7 +181,7 @@ export default function Defense() {
           </p>
           
           {/*  REFERENSLISTA  */}
-      <section className="mt-20 border-t border-slate-800 pt-10 pb-10">
+      <section className="mt-10 border-t border-slate-800 pt-10 pb-10">
         <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6 flex items-center gap-2">
           <BookOpen size={16} /> Källor
         </h3>
