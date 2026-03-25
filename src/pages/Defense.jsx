@@ -2,24 +2,24 @@ import { ShieldCheck, Target, ZapOff, ClipboardCheck, Terminal, Activity, Extern
 
 export default function Defense() {
   const controls = [
-    { 
-      category: 'Network Security', 
-      measure: 'Micro-segmentation (ISA/IEC 62443)', 
-      impact: 'High',
-      desc: 'Isolering av PLC-nätverk i zoner. Detta förhindrar Lateral Movement och skyddar Level 1-enheter om IT-nätverket (Level 4) drabbas av Ransomware.'
-    },
-    { 
-      category: 'Access Control', 
-      measure: 'MFA & PAM Integration', 
-      impact: 'Medium',
-      desc: 'Hårdvarubaserad MFA för fjärrunderhåll. Eliminerar risken med stulna inloggningsuppgifter som var den primära vektorn i Oldsmar-attacken 2021.'
-    },
-    { 
-      category: 'Monitoring', 
-      measure: 'OT-Specific IDS', 
-      impact: 'High',
-      desc: 'Deep Packet Inspection (DPI) för att upptäcka anomalier i Modbus TCP. Identifierar obehöriga skrivkommandon eller manipulation av sensordata i realtid.'
-    }
+{ 
+    category: 'Network Security', 
+    measure: 'Micro-segmentation (ISA/IEC 62443)', 
+    impact: 'High',
+    desc: 'Isolering av PLC-nätverk i zoner. Detta förhindrar Lateral Movement och skyddar Level 1-enheter om IT-nätverket (Level 4) drabbas av Ransomware. Genom strikta brandväggsregler mellan zonerna begränsas spridningsytan vid ett eventuellt intrång.'
+  },
+  { 
+    category: 'Access Control', 
+    measure: 'MFA & PAM Integration', 
+    impact: 'Medium',
+    desc: 'Hårdvarubaserad MFA för fjärrunderhåll. Eliminerar risken med stulna inloggningsuppgifter som var den primära vektorn i Oldsmar-attacken 2021. Implementeringen säkerställer att endast auktoriserad personal med verifierad identitet kan modifiera kritiska driftparametrar.'
+  },
+{ 
+    category: 'Monitoring', 
+    measure: 'OT-Specific IDS', 
+    impact: 'High',
+    desc: 'Deep Packet Inspection (DPI) för att upptäcka anomalier i Modbus TCP. Identifierar obehöriga skrivkommandon eller manipulation av sensordata i realtid. Systemet agerar som ett digitalt immunförsvar som larmar vid avvikelser från den normala driftprofilen i kontrollnätverket.'
+  }
   ];
 
   return (
@@ -29,24 +29,40 @@ export default function Defense() {
         <h1 className="text-4xl font-bold text-white tracking-tight italic">Säkerhetskontroller</h1>
       </header>
 
-      {/* DEFENSE MED IN DEPTH VISUAL */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {controls.map((item, i) => (
-          <div key={i} className="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl relative overflow-hidden group hover:border-emerald-500/30 transition-all text-shadow-glow">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-              <ShieldCheck size={80} className="text-emerald-500" />
-            </div>
-            <div className="relative z-10">
-              <div className="text-[10px] font-mono text-emerald-500 mb-2 uppercase tracking-widest">{item.category}</div>
-              <h3 className="text-lg font-bold text-white mb-3">{item.measure}</h3>
-              <p className="text-sm text-slate-400 leading-relaxed mb-4">{item.desc}</p>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-[10px] font-bold text-emerald-400 text-shadow-glow">
-                <Target size={12} /> MITIGATION: {item.impact}
-              </div>
-            </div>
-          </div>
-        ))}
+{/* DEFENSE MED IN DEPTH VISUAL */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {controls.map((item, i) => (
+    <div key={i} className="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl relative overflow-hidden group hover:border-emerald-500/30 transition-all text-shadow-glow flex flex-col min-h-[300px]">
+      
+      {/* Bakgrundsikon */}
+      <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
+        <ShieldCheck size={80} className="text-emerald-500" />
       </div>
+
+      <div className="relative z-10 flex flex-col h-full">
+        <div className="text-[10px] font-mono text-emerald-500 mb-2 uppercase tracking-widest">
+          {item.category}
+        </div>
+        
+        <h3 className="text-lg font-bold text-white mb-3">
+          {item.measure}
+        </h3>
+        
+        {/* flex-grow gör att denna p-tagg fyller ut tomrummet */}
+        <p className="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+          {item.desc}
+        </p>
+
+        {/* Denna div hamnar nu alltid längst ner */}
+        <div className="mt-auto">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-[10px] font-bold text-emerald-400 text-shadow-glow">
+            <Target size={12} /> MITIGATION: {item.impact}
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
       {/* EVALUATION SECTION  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-shadow-glow">
