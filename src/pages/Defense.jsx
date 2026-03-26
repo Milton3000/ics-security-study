@@ -239,7 +239,11 @@ export default function Defense() {
       </section>
         </div>
       </section>
-      
+      <footer className="pt-10 border-t border-slate-800 text-center">
+        <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">
+          Milton Kristoffersson 2026
+        </p>
+      </footer>
     </div>
   );
 }
