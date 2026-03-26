@@ -30,7 +30,7 @@ export default function Dashboard() {
         <h1 className="text-4xl font-bold text-white tracking-tight italic">WaterBoy Resurskarta</h1>
         <p className="text-slate-500 mt-4 max-w-2xl leading-relaxed text-sm">
           En säkerhetsanalys av en modern dricksvattenanläggning (2026). Systemet kombinerar traditionell driftteknik (OT)
-          med moderna IIoT-lösningar för att säkerställa vattenkvalitet och drifttillgänglighet för 150 000 invånare.
+          med moderna IIoT-lösningar för att säkerställa vattenkvalitet och drifttillgänglighet.
         </p>
       </header>
 
